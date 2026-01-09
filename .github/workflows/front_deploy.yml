@@ -28,7 +28,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.KEY }}
-          source: "frontapp/dist/"
-          target: ${{ secrets.FRONT_PATH }}
+          source: "frontapp/dist/*"
+          target: "/var/www/frontapp/"
           rm: true
           strip_components: 2
